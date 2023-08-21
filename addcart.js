@@ -46,7 +46,6 @@ function displayValues(target) {
         document.getElementById('grand-total').innerText = grandTotal.toFixed(2);
 
 
-
     }
     
 
