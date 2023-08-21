@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <!-- tailwind and daisyUi  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font of Work Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'pink': '#E527B2',
+              }
+            }
+          }
+        }
+      </script>
+<style>
+     /* google font  */
+     .sans{
+        font-family: 'Work Sans', sans-serif;
+        
+     }
+     
+     
+   
+</style>
+</head>
+<body class="sans">
+    <!-- start header section  -->
+    <header class="bg-[#F9F6E2] py-20">
+        <div class="container mx-auto flex flex-col-reverse md:flex-col-reverse lg:flex-row items-center justify-center gap-8">
+            <div>
+                <p class="text-black text-center text-xl md:text-2xl lg:text-3xl font-medium">---SALE FEVER---</p>
+                <h1 class="mt-11 text-center text-4xl md:text-5xl lg:text-6xl font-bold leading-snug" >Purchase TK 200 or <br>
+                     above & get <span class="text-pink text-4xl md:text-5xl lg:text-6xl font-bold">20% off</span></h1>
+                     <div class="flex gap-4 mt-16  md:mt-18 lg:mt-20 items-center justify-center">
+                <p class="text-lg md:text-xl lg:text-2xl font-medium">Use Promo Code </p>
+                <button class="bg-pink py-2 md:py-3 lg:py-4 px-4 md:px-5 lg:px-6 text-white rounded-md font-semibold text-lgmd:text-xl lg:text-2xl text-center">SELL200</button>
+                     </div>
+                
+            </div>
+            <div>
+                <img src="images/Summer 1.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- End header section  -->
+
+    <main>
+
+
+        <section class="container mx-auto">
+
+            <section class="flex flex-col md:flex-col lg:flex-row justify-center gap-6">
+                <div>
+
+                    <!-- Sportswear -->
+                    <section>
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl mt-10 md:mt-28 lg:mt-28 font-semibold text-black text-center lg:text-left">Sportswear</h1>
+                <div class="flex-1 grid md:grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div  onclick="displayValues(this)" class="card w-full  bg-base-100 shadow-xl mt-2 bg-white p-5">
+                        <figure><img src="images/prod4.png" alt="dress" class="mb-9 h-44  md:h-52 lg:h-60 " /></figure>
+                        <div class="card-body">
+                          <div class="rating rating-lg rating-half w-28 mx-auto ">
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                          </div>
+                              <h2 class=" text-center text-2xl font-medium lg:font-bold mb-8">Sports Back Cap</h2>
+                              <p class="text-center mb-6"><span>49.00</span>TK</p>
+                          </div>
+                    </div>
+                    <div  onclick="displayValues(this)" class="card w-full  bg-base-100 shadow-xl mt-2 bg-white p-5">
+                        <figure><img src="images/prod5.png" alt="Cap" class="mb-9 h-44  md:h-52 lg:h-60 " /></figure>
+                        <div class="card-body">
+                          <div class="rating rating-lg rating-half w-28 mx-auto ">
+                              <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" checked />
+                              <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FFC107]" />
+                          </div>
+                              <h2 class=" text-center text-2xl font-medium lg:font-bold mb-8">Full Jersey Set</h2>
+                              <p class="text-center mb-6"><span>69.00</span>TK</p>
+                          </div>
+                    </div>
+                    <div  onclick="displayValues(this)" class="card w-full  bg-base-100 shadow-xl mt-2 bg-white p-5">
+                        <figure><img src="images/prod6.png" alt="Cap" class="mb-9 h-44  md:h-52 lg:h-60 " /></figure>
+                        <div class="card-body">
+                          <div class="rating rating-lg rating-half w-28 mx-auto ">
+                              <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" checked />
+                              <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FFC107]" />
+                          </div>
+                              <h2 class=" text-center text-2xl font-medium lg:font-bold mb-8">Sports cates</h2>
+                              <p class="text-center mb-6"><span>159.00</span>TK</p>
+                          </div>
+                    </div>
+                </div>
+                    </section>
+                <!-- Furniture -->
+                <section>
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl mt-10 md:mt-28 lg:mt-28 font-semibold text-black text-center lg:text-left">Furniture</h1>
+                <div class="flex-1 grid md:grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- part-1  -->
+                    <div onclick="displayValues(this)" class="card w-full bg-base-100 shadow-xl mt-2 bg-white p-5">
+                        <figure><img src="images/prod7.png" alt="dress" class="mb-9 h-44  md:h-52 lg:h-60 " /></figure>
+                        <div class="card-body">
+                          <div class="rating rating-lg rating-half w-28 mx-auto ">
+                              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" checked />
+                              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#FFC107]" />
+                          </div>
+                              <h2 class=" text-center text-2xl font-medium lg:font-bold mb-8">Single Relax Chair</h2>
+                              <p class="text-center mb-6"><span>185.00</span>TK</p>
+                          </div>
+                    </div>
+                    <!-- part-2  -->
+
+                    <div onclick="displayValues(this)" class="card w-full bg-base-100 shadow-xl mt-2 bg-white p-5">
+                        <figure><img src="images/prod8.png" alt="Cap" class="mb-9 h-44  md:h-52 lg:h-60 " /></figure>
+                        <div class="card-body">
+                          <div class="rating rating-lg rating-half w-28 mx-auto ">
+                              <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#FFC107]" checked />
+                          </div>
+                              <h2 class=" text-center text-2xl font-medium lg:font-bold mb-8">Children play</h2>
+                              <p class="text-center mb-6"><span>299.00</span>TK</p>
+                          </div>
+                    </div>
+                    <!-- part-3  -->
+
+                    <div onclick="displayValues(this)" class="card w-full bg-base-100 shadow-xl mt-2 bg-white p-5">
+                        <figure><img src="images/prod9.png" alt="Cap" class="mb-9 h-44  md:h-52 lg:h-60 " /></figure>
+                        <div class="card-body">
+                          <div class="rating rating-lg rating-half w-28 mx-auto ">
+                              <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#FFC107]" />
+                              <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#FFC107]" checked />
+                          </div>
+                              <h2 class=" text-center text-2xl font-medium lg:font-bold mb-8">Flexible Sofa</h2>
+                              <p class="text-center mb-6" ><span>339.00</span>TK</p>
+                          </div>
+                    </div>
+                </div>
+                    </section>
+                    
+                        
+                    </div>    
+                        
+            
+                
+                <div class="relative  lg:top-20 md:mt-5 lg:mt-0 py-20">
+                <h2 id="coupon" class="text-xl md:text-xl lg:text-2xl font-medium lg:mt-0 px-5 lg:px-0">Have Coupon?</h2>
+                <div class=" block relative ml-5 lg:-ml-0.5 mb-5 lg:w-full">
+                    <input id="couponCode" type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16" /> 
+                    <button id="applyBtn" class="bg-pink btn btn-secondary absolute top-0 right-0 rounded-l-none " disabled>Apply</button>
+                  </div>
+                <div id="items" class=" text-black mb-10 text-base md:text-lg lg:text-xl font-normal text-center lg:text-left">
+
+                   
+                </div>
+                <hr class=" mx-auto w-80 md:w-1/2 lg:w-full border-b-4 border-gray-300 mb-4">
+                <div class="mb-12 text-center lg:text-left">
+                    <h1 class="text-base md:text-lg lg:text-xl font-medium px-5 md:px-3 lg:px-0">Total price: <span id="total-price">0 </span>TK</h1>
+                    <h1 class="text-base md:text-lg lg:text-xl font-medium px-5 md:px-3 lg:px-0">Discount: <span id="Discount">0 </span>TK</h1>
+                    <h1 class="text-base md:text-lg lg:text-xl font-medium px-5 md:px-3 lg:px-0">Total: <span id="grand-total">0 </span>TK</h1>
+                </div>
+                <div class="text-center lg:text-left">
+                    <button onclick="my_modal_5.showModal()"  class="btn btn-secondary text-xl font-semibold text-white ml-4 md:ml-4 lg:ml-0 " >Make Purchase</button>
+                </div>
+                    
+                
+                
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle py-10">
+                    <form method="dialog" class="modal-box">
+                      <img src="images/congo.png" alt="images" class="mb-2 w-32 mx-auto" />
+                      <h3 class="font-bold text-lg text-center">Congratulations</h3>
+                      <p class="py-4 text-center">You Purchase the product</p>
+                            <div class="text-center">
+                          <button id="purchase" class="bg-pink text-white mr-4  p-2 rounded-md">Go HOME</button>
+                            </div>
+                        </div>
+                      
+                    </form>
+                  </dialog>
+            </div>
+        </section>
+        </section>
+
+    </main> 
+    <script src="addcart.js"></script>
+</body>
+</html>
