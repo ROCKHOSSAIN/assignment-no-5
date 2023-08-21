@@ -46,10 +46,9 @@ function displayValues(target) {
         document.getElementById('grand-total').innerText = grandTotal.toFixed(2);
 
 
-    }else{
-        alert('insert correct coupon code!!');
-        couponInput.value=' ';
+
     }
+    
 
     })
     btnPurchase.addEventListener('click', function() {
