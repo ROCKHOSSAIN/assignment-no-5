@@ -21,11 +21,12 @@ function displayValues(target) {
    
     const btnApply = document.getElementById('applyBtn'); 
     const btnPurchase = document.getElementById('purchase'); 
+    const btnMakePurchase = document.getElementById('make-purchase'); 
     if(total > 0){
-        purchase.removeAttribute('disabled');
+        btnMakePurchase.removeAttribute('disabled');
     } 
     else {
-        btnApply.setAttribute('disabled','true');
+        btnMakePurchase.setAttribute('disabled','true');
     }
     
     if (total >= 200) {
@@ -46,6 +47,9 @@ function displayValues(target) {
         document.getElementById('grand-total').innerText = grandTotal.toFixed(2);
 
 
+    }else{
+        alert('You enterd wrong Coupon!!');
+        couponInput.value = ' '
     }
     
 
